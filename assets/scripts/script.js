@@ -9,6 +9,7 @@ window.addEventListener("scroll", () => {
     } else {
         // console.log("please help me")
         content.classList.remove("active")
+        content.style.transition = "2s all ease"
     }
 })
 
