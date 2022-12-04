@@ -87,3 +87,21 @@ mark.addEventListener("click", () => {
     body.style.overflowY = "scroll"
 })
 
+// 
+let mobileNavList = document.querySelectorAll(".desktop-list")
+
+console.log(mobileNavList)
+
+mobileNavList.forEach((navList) => {
+    navList.addEventListener("click", () => {
+        mobileNavList.forEach((e) => {
+            // console.log(e)
+            e.classList.remove("nav-active")
+        })
+        navList.classList.add("nav-active")
+    })
+})
+
+
+// 
+

@@ -117,8 +117,9 @@ ul {
 
 .row {
     width: 100%;
-    /* height: 50%; */
+    height: 100%;
     display: flex;
+    align-items: center;
 }
 
 .col1,
@@ -128,6 +129,8 @@ ul {
 }
 
 .row>.col1 {
+    /* height: 30vh; */
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -173,6 +176,11 @@ ul {
 .active {
     opacity: 1;
     transform: translateX(0%);
+}
+
+.nav-active {
+    background-color: blue;
+    border-radius: 7px;
 }
 
 .container-new {
@@ -450,7 +458,18 @@ input:focus {
     background: rgb(52, 35, 3);
     animation: all 2s;
 }
-
+.check-container{
+text-align: center;
+margin: 12px 0;
+}
+.check{
+    padding: 10px 40px;
+    text-transform: capitalize;
+    font-size: 19px;
+    background-color: var(--background-btn);
+    border: none;
+  
+}
 .new-para {
     width: 100%;
     display: flex;
@@ -461,8 +480,92 @@ input:focus {
 
 .choose {
     width: 70%;
+
 }
 
+.food-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* padding: 10px 0; */
+    margin: 10px 0;
+    text-transform: capitalize;
+    align-items: center;
+    border: 1px solid var(--background-btn);
+}
+
+.food-img,
+.food-name,
+.price-icon,
+.price {
+    width: 30%;
+
+}
+.price-icon>input{
+    width: 10%;
+    background: transparent;
+    color: white;
+    border: 1px solid var(--background-btn);
+}
+
+.food-img {
+    width: 50px;
+    height: 50px;
+
+    /* background-image: url(/assets/img/fried-chicken-600-400.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+.food-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    /* height: 100%; */
+}
+
+.food-name>p {
+    padding: 0 5px;
+}
+
+.price-btn {
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.card-child {
+    width: 50%;
+    /* border: 1px solid yellow; */
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    /* border: 1px solid red; */
+}
+
+.menu-title {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.menu-title>h2 {
+    font-size: 35px;
+    color: var(--background-btn);
+    text-transform: capitalize;
+}
+
+.menu-title>p {
+    font-size: 18px;
+}
+.qty{
+    border: 1px solid white;
+    padding: 0px 15px;
+}
 .icon {
     width: 30%;
     display: flex;
@@ -482,7 +585,16 @@ input:focus {
 }
 
 
+@media screen and (max-width:900px) {
+    .form-content-container {
+        width: 100%;
+    }
 
+    .form {
+        gap: 10px;
+    }
+
+}
 
 @media screen and (max-width:600px) {
     .desktop {
@@ -535,24 +647,27 @@ input:focus {
         margin: 0 auto;
 
     }
-  
-.menu{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    gap: 10px;
-    text-align: center;
-    /* align-items: center; */
-    justify-content: center;
-    /* border: 1px solid red; */
-}
-.menu>.nav-item{
-    /* padding-bottom: 15px; */
-    margin: 0 30px;
-    background: var(--background-btn);
-    border: 1px solid var(--background-btn);
-}
+
+
+    .menu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        gap: 10px;
+        text-align: center;
+        /* align-items: center; */
+        justify-content: center;
+        /* border: 1px solid red; */
+    }
+
+    .menu>.nav-item {
+        /* padding-bottom: 15px; */
+        margin: 0 30px;
+        background: var(--background-btn);
+        border: 1px solid var(--background-btn);
+    }
+
     .flex-menu {
         display: block;
     }
@@ -665,11 +780,21 @@ input:focus {
         padding: 20px 0;
     }
 
+    .card {
+        flex-direction: column;
+        gap: 0;
+    }
 
+    .card-child {
+        width: 100%;
+    }
 
-
-
-
+.food-name>p{
+    font-size: 12px;
+}
+.menu-title >p{
+    font-size: 14px;
+}
 
 
 
