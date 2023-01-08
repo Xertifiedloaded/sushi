@@ -32,12 +32,12 @@ window.addEventListener("scroll", () => {
 let form = document.querySelector(".myform")
 let inputs = document.querySelectorAll(".input")
 let submitNow = document.querySelector(".submit-btn")
-console.log(form)
+// console.log(form)
 form.addEventListener("submit", (e) => {
     e.preventDefault()
     for (i = 0; i < inputs.length; i++) {
         let input = inputs[i].value
-        console.log(input)
+        // console.log(input)
         input = ""
     }
     submitNow.textContent = "submitted ✅"
