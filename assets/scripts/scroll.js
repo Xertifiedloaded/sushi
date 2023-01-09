@@ -29,6 +29,7 @@ window.addEventListener("scroll", () => {
         }
     })
 })
+let addr =document.querySelector(".addr")
 let form = document.querySelector(".myform")
 let inputs = document.querySelectorAll(".input")
 let submitNow = document.querySelector(".submit-btn")
@@ -37,8 +38,9 @@ form.addEventListener("submit", (e) => {
     e.preventDefault()
     for (i = 0; i < inputs.length; i++) {
         let input = inputs[i].value
+      
         // console.log(input)
-        input = ""
+        
     }
     submitNow.textContent = "submitted ✅"
 })
@@ -59,7 +61,7 @@ newIcon.addEventListener("click", () => {
     }
 })
 let selectMenu = document.querySelector(".choose")
-console.log(selectMenu)
+// console.log(selectMenu)
 let orderLocation = document.querySelectorAll(".location-price")
 orderLocation.forEach(newLocation => {
     newLocation.addEventListener("click", () => {
@@ -77,7 +79,7 @@ let seek = document.querySelector(".toggle-mobile-menu")
 let body = document.querySelector("body")
 // console.log(body)
 let mark = document.querySelector(".fa-xmark")
-console.log(seek)
+// console.log(seek)
 bar.addEventListener("click", () => {
     hide.classList.replace("hide", "seek");
     body.style.overflowY = "hidden"
@@ -90,7 +92,7 @@ mark.addEventListener("click", () => {
 // 
 let mobileNavList = document.querySelectorAll(".desktop-list")
 
-console.log(mobileNavList)
+// console.log(mobileNavList)
 
 mobileNavList.forEach((navList) => {
     navList.addEventListener("click", () => {

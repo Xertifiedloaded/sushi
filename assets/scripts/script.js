@@ -11,283 +11,126 @@ window.addEventListener("scroll", () => {
     }
 })
 
-let allBtns = document.querySelectorAll("#allbtn")
-allBtns.forEach(button => {
-    if (button.classList.contains("first1")) {
-        button.addEventListener("click", counter);
-        let value = 0
-        function counter(e) {
-            let display = document.querySelector(".preview")
-            const btn = e.target.id
-            if (btn === 'increase') {
-                value++
-                console.log("minus")
-            } else if (btn === 'decrease') {
-                value -= 1
-                if (value < 0) {
-                    value = 0
-                }
-            }
-            display.textContent = value
-        }
-    } else if (button.classList.contains("second")) {
-        button.addEventListener("click", counter);
-        let value = 0
-        function counter(e) {
-            let display = document.querySelector(".preview1")
-            const btn = e.target.id
-            if (btn === 'increase') {
-                value++
-                console.log("minus")
-            } else if (btn === 'decrease') {
-                value--
-                if (value < 0) {
-                    value = 0
-                }
-            }
-            display.textContent = value
-        }
-    } else if (button.classList.contains("third")) {
-        button.addEventListener("click", counter);
-        let value = 0
-        function counter(e) {
-            let display = document.querySelector(".preview2")
-            const btn = e.target.id
-            if (btn === 'increase') {
-                value++
-                console.log("minus")
-            } else if (btn === 'decrease') {
-                value--
-                if (value < 0) {
-                    value = 0
-                }
-            }
 
-            display.textContent = value
-        }
-    } else if (button.classList.contains("fourth")) {
-        button.addEventListener("click", counter);
-        let value = 0
-        function counter(e) {
-            let display = document.querySelector(".preview4")
-            const btn = e.target.id
-            if (btn === 'increase') {
-                value++
-                console.log("minus")
-            } else if (btn === 'decrease') {
-                value--
-                if (value < 0) {
-                    value = 0
-                }
-            }
-            display.textContent = value
-        }
-    } else if (button.classList.contains("fifth")) {
-        button.addEventListener("click", counter);
-        let value = 0
-        function counter(e) {
-            let display = document.querySelector(".preview5")
-            const btn = e.target.id
-            if (btn === 'increase') {
-                value++
-                console.log("minus")
-            } else if (btn === 'decrease') {
-                value--
-                if (value < 0) {
-                    value = 0
-                }
-            }
-            display.textContent = value
-        }
-    } else if (button.classList.contains("sixth")) {
-        button.addEventListener("click", counter);
-        let value = 0
-        function counter(e) {
-            let display = document.querySelector(".preview6")
-            const btn = e.target.id
-            if (btn === 'increase') {
-                value++
-                console.log("minus")
-            } else if (btn === 'decrease') {
-                value--
-                if (value < 0) {
-                    value = 0
-                }
-            }
 
-            display.textContent = value
-        }
-    } else if (button.classList.contains("seventh")) {
-        button.addEventListener("click", counter);
-        let value = 0
-        function counter(e) {
-            let display = document.querySelector(".preview7")
-            const btn = e.target.id
-            if (btn === 'increase') {
-                value++
-                console.log("minus")
-            } else if (btn === 'decrease') {
-                value--
-                if (value < 0) {
-                    value = 0
-                }
-            }
 
-            display.textContent = value
-        }
-    } else if (button.classList.contains("eight")) {
-        button.addEventListener("click", counter);
-        let value = 0
-        function counter(e) {
-            let display = document.querySelector(".preview8")
-            const btn = e.target.id
-            if (btn === 'increase') {
-                value++
-                console.log("minus")
-            } else if (btn === 'decrease') {
-                value--
-                if (value < 0) {
-                    value = 0
-                }
-            }
-            display.textContent = value
-        }
-    } else if (button.classList.contains("nine")) {
-        button.addEventListener("click", counter);
-        let value = 0
-        function counter(e) {
-            let display = document.querySelector(".preview9")
-            const btn = e.target.id
-            if (btn === 'increase') {
-                value++
-                console.log("minus")
-            } else if (btn === 'decrease') {
-                value--
-                if (value < 0) {
-                    value = 0
-                }
-            }
 
-            display.textContent = value
-        }
-    } else if (button.classList.contains("ten")) {
-        button.addEventListener("click", counter);
-        let value = 0
-        function counter(e) {
-            let display = document.querySelector(".preview10")
-            const btn = e.target.id
-            if (btn === 'increase') {
-                value++
-                console.log("minus")
-            } else if (btn === 'decrease') {
-                value--
-                if (value < 0) {
-                    value = 0
-                }
-            }
 
-            display.textContent = value
-        }
-    } else if (button.classList.contains("eleven")) {
-        button.addEventListener("click", counter);
-        let value = 0
-        function counter(e) {
-            let display = document.querySelector(".preview11")
-            const btn = e.target.id
-            if (btn === 'increase') {
-                value++
-                console.log("minus")
-            } else if (btn === 'decrease') {
-                value--
-                if (value < 0) {
-                    value = 0
-                }
-            }
-
-            display.textContent = value
-        }
-    } else if (button.classList.contains("twelve")) {
-        button.addEventListener("click", counter);
-        let value = 0
-        function counter(e) {
-            let display = document.querySelector(".preview12")
-            const btn = e.target.id
-            if (btn === 'increase') {
-                value++
-                console.log("minus")
-            } else if (btn === 'decrease') {
-                value--
-                if (value < 0) {
-                    value = 0
-                }
-            }
-
-            display.textContent = value
-        }
-    } else if (button.classList.contains("thirteen")) {
-        button.addEventListener("click", counter);
-        let value = 0
-        function counter(e) {
-            let display = document.querySelector(".preview13")
-            const btn = e.target.id
-            if (btn === 'increase') {
-                value++
-                console.log("minus")
-            } else if (btn === 'decrease') {
-                value--
-                if (value < 0) {
-                    value = 0
-                }
-            }
-
-            display.textContent = value
-        }
-    } else if (button.classList.contains('fourteen')) {
-        button.addEventListener("click", counter);
-        let value = 0
-        function counter(e) {
-            let display = document.querySelector(".preview14")
-            const btn = e.target.id
-            if (btn === 'increase') {
-                value++
-                console.log("minus")
-            } else if (btn === 'decrease') {
-                value--
-                if (value < 0) {
-                    value = 0
-                }
-            }
-
-            display.textContent = value
-        }
-    }
-})
-// let priceNew = document.querySelector(".price-btn").value
-// let preview = document.querySelector(".prev")
-// let foodName = document.querySelectorAll(".food-name")
-// console.log(foodName)
-let valueContent = 0
-let smallest = document.querySelector(".small")
-let food = document.querySelectorAll(".price")
-food.forEach(food => {
-    food.addEventListener("click", () => {
-        smallest.textContent = valueContent
-        valueContent++
+const productEle = document.querySelector(".card-child")
+const cartEle = document.querySelector(".cart-element")
+let subTotal = document.querySelector(".sub-total")
+function renderProducts() {
+    products.forEach((product) => {
+        productEle.innerHTML += `
+                           <div class="food-container">
+                                <div class="food-img" onclick="addToCart(${product.id})">
+                                    <img class="food-image" src=${product.imgsrc}>
+                                </div>
+                                <div class="the-two">
+                                    <div class="food-name">
+                                     ${product.name}
+                                    </div>
+                                    <div class="price-icon">
+                                        <button class="price-btn" value="10.00">$${product.price}.00</button>
+                                    </div>
+                                </div>
+                            </div>
+        `
     })
+}
+renderProducts()
 
-})
-
-let svg = document.querySelector(".event")
-let off = document.querySelector(".off")
-let isOnline = false
-svg.addEventListener("click", () => {
-    if (isOnline == false) {
-        isOnline = true
-        off.classList.replace("off", "on")
+// cart array
+cart = []
+// add to cart
+function addToCart(id) {
+    // check if i already have the product
+    if (cart.some((item) => item.id === id)) {
+        alert("product already in cart")
     } else {
-        isOnline = false
-        off.classList.replace("on", "off")
+        const item = products.find((product) => product.id === id)
+        // console.log(item)
+        // i push the cart to item
+        cart.push({
+            ...item, numberOfUnits: 1
+        })
+        console.log(cart)
     }
-})
+    // update the cart
+    updateCart()
+}
+// render car items
+function updateCart() {
+    showCartItems()
+    showTotal()
+}
+// calculate total and show sub total
+function showTotal() {
+    let totalPrice, totalItems = 0
+    cart.forEach((item) => {
+        totalPrice += item.price * item.numberOfUnits;
+        totalItems += item.numberOfUnits;
+    })
+    subTotal.innerHTML = `sub-total (${totalItems}items) :${totalPrice}`
+}
+function showCartItems() {
+    cartEle.innerHTML = ""
+    cart.forEach((item) => {
+        // clear cart elements
+        cartEle.innerHTML += `
+    <div class="cart-cont">
+     <div class="cart-img-cont">
+       <img class="cart-img" src=${item.imgsrc}>
+     </div>
+     <div class="cart-name">
+        ${item.name}
+       </div>
+       <div class="cart-price">
+    ${item.price}.00
+       </div>
+<div class="units">
+    <div class="minus" >-</div>
+     <p>${item.numberOfUnits}</p>
+     <div class="plus" id="plus" onclick="numberOfUnits('plus',${item.id})">+</div>
+</div>
+
+   
+        `
+    })
+}
 
 
+// change number of units of an item
+function changeNumberOfUnit(action, id) {
+    cart = cart.map(() => {
+        let numberOfUnits = item.numberOfUnits
+        if (item.id === id) {
+            if (action === "minus")
+                numberOfUnits--
+        } else if (action === plus) {
+            numberOfUnits--
+        }
+        return {
+            ...item,
+            numberOfUnits,
+        }
+    })
+    updateCart()
+}
+
+
+function whatsApp() {
+    let myOrder = document.querySelector(".order").value
+    let myName = document.querySelector(".fullname").value
+    let myAddress = document.querySelector(".my-address").value
+    let myPhone = document.querySelector(".my-phone").value
+    let whatsAppUrl = "https://wa.me/2348168043011?text="
+        + "Name of the Buyer:" + " " + myName + "%0a"
+        + "-----------------------------" + "%0a"
+        + "Your Number:" + " " + myPhone + "%0a"
+        + "----------------------------" + "%0a"
+        + "Your Full Address" + " " + myAddress + "%0a"
+        + "-----------------------------" + "%0a"
+        + "Order" + myOrder + "%0a"
+    window.open(whatsAppUrl, '_blank').focus()
+}

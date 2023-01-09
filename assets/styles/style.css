@@ -488,24 +488,20 @@ input:focus {
 
 .food-container {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    /* padding: 10px 0; */
-    margin: 10px 0;
-    text-transform: capitalize;
-    align-items: center;
+display: flex;
     border: 1px solid var(--background-btn);
+    justify-content: space-between;
 }
 
 .food-img,
-.food-name,
-.price-icon,
-.price,
-.buttons {
+.buttons,.the-two {
     width: 30%;
-
 }
-
+.the-two{
+    display: flex;
+   align-items: center;
+    justify-content: space-between;
+}
 .buttons {
     display: flex;
     /* gap: 10px; */
@@ -549,6 +545,8 @@ input:focus {
 .card {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
     /* border: 1px solid red; */
 }
@@ -638,7 +636,8 @@ input:focus {
     width: 100%;
     position: fixed;
     bottom: 0;
-
+width: 100%;
+display: ;
     background-color: black;
 }
 .order-btn{
@@ -649,6 +648,70 @@ input:focus {
     text-transform: capitalize;
     border: none;
     border-radius: 3px ;
+}
+
+
+.the-two{
+    display: flex;
+    width: 70%;
+    
+}
+.cart-array{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.cart-img-cont{
+width: 30px;
+height: 30px;
+border-radius: 50%;
+}
+.cart-element{
+    width: 100%;
+    text-transform: capitalize;
+}
+.cart-img{
+    width: 100%;
+}
+.cart-price{
+    width: 30%;
+    text-align: center;
+}
+.total{
+    padding: 10px 0;
+    text-transform: capitalize;
+}
+.cart-cont{
+    display: flex;
+    width: 60%;
+   border: 1px solid red;
+   gap: 20px;
+   margin-top: 10px;
+    justify-content: space-between;
+}
+    .fix{
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        background: black;
+    }
+.card-btn{
+    width: 30%;
+}
+.units{
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    gap: 20%;
+}
+
+.cart-cont {
+    width: 100%;
+    border: none;
+}
+
+.cart-name {
+    width: 30%;
 }
 @media screen and (max-width:900px) {
     .form-content-container {
@@ -821,7 +884,13 @@ input:focus {
     .section-bg {
         height: 0;
     }
-
+.cart-cont{
+    width: 100%;
+    border: none;
+}
+.cart-name{
+    width: 30%;
+}
     .my-img1 {
         transform: translate(100%, 0);
     }
